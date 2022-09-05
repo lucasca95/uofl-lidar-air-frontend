@@ -34,7 +34,8 @@ function MainDashboardP(){
         setLoadingLidarData(true);
         LidarService.lidarDataGET()
         .then((response)=>{
-            setLidarData(response);
+            // console.log(response);
+            setLidarData(response.data);
         })
         .catch((error)=>{
             console.warn(`Error loading lidar data`);
