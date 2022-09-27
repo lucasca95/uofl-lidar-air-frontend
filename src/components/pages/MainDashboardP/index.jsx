@@ -19,6 +19,7 @@ function MainDashboardP(){
         setLoadingAirData(true);
         AirService.airDataGET()
         .then((response)=>{
+            // console.log(response);
             setAirData(response);
         })
         .catch((error)=>{

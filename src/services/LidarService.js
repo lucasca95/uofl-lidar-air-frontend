@@ -2,7 +2,7 @@ import Environment from "../environment";
 
 
 export const LidarService = {
-    lidarDataGET: async (device_id = 1) => {
+    lidarDataGET: async (device_id = 2) => {
         const axios = require('axios').default;
         let url = `${Environment.api}get/lidar/`;
         const getResult = await axios.post(`${url}`, {id: device_id})

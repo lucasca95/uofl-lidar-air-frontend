@@ -1,5 +1,14 @@
+import Environment from "../environment";
+
 export const AirService = {
-    airDataGET: async (data = null) => {
+    airDataGET: async (device_id = 2) => {
+        const axios = require('axios').default;
+        let url = `${Environment.api}get/air/`;
+        const getResult = await axios.post(`${url}`, {id: device_id})
+        return getResult.data.data[0];
+    },
+
+    testAirDataGET: async (data = null) => {
         const result = 
             {
                 aqi: 1,

@@ -221,7 +221,7 @@ function MainDashboardT({
                                         <div><i>SO2</i></div><div><strong>{airData.so2} ppb</strong></div>
                                     </div>
                                     <div className={classes.attrItem}>
-                                        <div><i>PM1.0</i></div><div><strong>{airData.pm} μg/m<sup>3</sup></strong></div>
+                                        <div><i>PM1.0</i></div><div><strong>{airData.pm1p0} μg/m<sup>3</sup></strong></div>
                                     </div>
                                     <div className={classes.attrItem}>
                                         <div><i>Pressure</i></div><div><strong>{airData.pres} hPa</strong></div>
@@ -232,10 +232,10 @@ function MainDashboardT({
                                         <div><i>NO2</i></div><div><strong>{airData.no2} ppb</strong></div>
                                     </div>
                                     <div className={classes.attrItem}>
-                                        <div><i>PM2.5</i></div><div><strong>{airData.pm25} μg/m<sup>3</sup></strong></div>
+                                        <div><i>PM2.5</i></div><div><strong>{airData.pm2p5} μg/m<sup>3</sup></strong></div>
                                     </div>
                                     <div className={classes.attrItem}>
-                                        <div><i>Relative Humidity</i></div><div><strong>{airData.relHum} RH</strong></div>
+                                        <div><i>Relative Humidity</i></div><div><strong>{airData.relhum} RH</strong></div>
                                     </div>
                                 </div>
                                 <div className={classes.attrBar}>
